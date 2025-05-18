@@ -1,0 +1,88 @@
+@use "/scss/mixins";
+.header {
+    background: #fff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #ddd;
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+  
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  
+    .logo img {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+  
+    .nav-list {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      margin: 0;
+  
+      li {
+        a {
+          font-size: 1.5rem;
+          color: #333;
+          text-decoration: none;
+          position: relative;
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 20px;
+
+  
+          &.active,
+          &:hover {
+            color: #ff5722;
+          }
+  
+          .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid currentColor;
+            transform: translateY(1px);
+          }
+        }
+      }
+      a.up .arrow {
+        border-top: none;
+        border-bottom: 5px solid currentColor;
+      }
+
+    }
+  
+    .contact {
+      font-size: 1.5rem;
+  
+      span {
+        color: #555;
+        margin-right: 0.3rem;
+      }
+  
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+  // Responsive
+ @include mixins.screen(sm) {
+  .nav {
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+  }
+}

@@ -4,13 +4,812 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
+        <%- include("./partials/head.ejs") %>
     </head>
     <body>
         <div class="wrapper">
             <%- include("./partials/header.ejs") %>
-            <main>
-                <h1>home</h1>
-            </main>
+            <!-- //setion1  -->
+            <section class="hero">
+                <div class="container">
+                    <div class="row align-center gx-4 gy-4">
+                        <!-- Text left -->
+                        <div class="col-6 col-md-12 col-sm-12">
+                            <h1 class="hero-title">
+                                Find Your Dream <br />
+                                Home Right Away.
+                            </h1>
+                            <p class="hero-desc">
+                                The experience and commitment to rewarding
+                                <br />
+                                landowners with their dream architectural <br />
+                                developments has made them earn trust within and
+                                <br />
+                                beyond borders.
+                            </p>
+                            <button class="btn btn-primary">
+                                Find Property <span class="arrow">→</span>
+                            </button>
+                        </div>
+
+                        <!-- Image right -->
+                        <div class="col-6 col-md-12 col-sm-12 hero-img-wrapper">
+                            <img
+                                src="/img/header-img.png"
+                                alt="Building"
+                                class="hero-img"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- setion Location-->
+                    <div class="filter-box">
+                        <div
+                            class="row gx-5 gy-3 row-cols-3 row-cols-md-2 row-cols-sm-1"
+                        >
+                            <div class="filter-item">
+                                <strong
+                                    ><i class="fa-solid fa-location-dot"></i>
+                                    Location</strong
+                                >
+                                <div class="filter-select">
+                                    Select Location
+                                    <span class="arrow-down">▼</span>
+                                </div>
+                            </div>
+
+                            <div class="filter-item">
+                                <strong
+                                    ><i class="fa-solid fa-house"></i> Property
+                                    Type</strong
+                                >
+                                <div class="filter-select">
+                                    Choose Property Type
+                                    <span class="arrow-down">▼</span>
+                                </div>
+                            </div>
+
+                            <!--   Price Range + button -->
+                            <div class="filter-item filter-with-button">
+                                <strong
+                                    ><i class="fa-solid fa-wallet"></i> Price
+                                    Range</strong
+                                >
+                                <div class="filter-flex">
+                                    <div class="filter-select">
+                                        Choose Price
+                                        <span class="arrow-down">▼</span>
+                                    </div>
+                                    <button class="btn btn-primary">
+                                        <i
+                                            class="fa-solid fa-magnifying-glass"
+                                        ></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section 3 -->
+            <section class="about-section">
+                <div class="container">
+                    <div class="row align-center gx-3 gy-3">
+                        <!-- Cột trái -->
+                        <div class="col-6 col-md-12">
+                            <div class="about-content">
+                                <p class="about-subtitle">About Us</p>
+                                <h2 class="about-title">
+                                    We Specialize In Quality Home Renovations
+                                </h2>
+                                <p class="about-desc">
+                                    Thene are many wariations of passages of
+                                    Lorem lpsun available, but the majority have
+                                    sufered alteration in some form, by injected
+                                    humour. or randomised words wihich don't
+                                    look even sligitty believable. If you are
+                                    going to Se a pessage of Lorem lpsum.
+                                </p>
+
+                                <ul class="about-list">
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Outstanding property
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Professional and experienced human
+                                        resources
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Provide the best services for users
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        Modern city locations and exceptional
+                                        lifestyle
+                                    </li>
+                                </ul>
+
+                                <button class="btn btn-primary">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Cột phải -->
+                        <div class="col-6 col-md-12">
+                            <div class="about-image-wrapper">
+                                <img
+                                    src="/img/about-us.png"
+                                    alt="About Image"
+                                    class="about-image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--section 4 :Specialists services provided in this -->
+            <section class="services">
+                <div class="container">
+                    <div class="services-heading">
+                        <p class="section-subtitle">Services</p>
+                        <h2 class="section-title">
+                            Specialists services provided in this<br />
+                            apartment building
+                        </h2>
+                    </div>
+                    <div
+                        class="row row-cols-3 row-cols-md-2 row-cols-sm-1 gx-4 gy-4"
+                    >
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="/img/section4-1.png" alt="home" />
+                                </div>
+                                <h3 class="service-title">Luxury Apartment</h3>
+                                <p class="service-desc">
+                                    Very professional, quick responses to calls,
+                                    humble and understanding. Marty has done a
+                                    lot of work for me and helped my friends and
+                                    myself work through some sticky issues.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat -->
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="img/setion4-2.png" alt="home2" />
+                                </div>
+                                <h3 class="service-title">
+                                    Architecture Design
+                                </h3>
+                                <p class="service-desc">
+                                    Marty has done a lot of work for me and
+                                    helped my friends and myself work through
+                                    some sticky issues. His staff is
+                                    professional and hard working! I recommend
+                                    anyone who
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat -->
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="img/section4-3.png" alt="home3" />
+                                </div>
+                                <h3 class="service-title">Extra Security</h3>
+                                <p class="service-desc">
+                                    Very professional, quick responses to calls,
+                                    humble and understanding. Marty has done a
+                                    lot of work for me and helped my friends and
+                                    myself work through some sticky issues.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat -->
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="img/section4-4.png" alt="home4" />
+                                </div>
+                                <h3 class="service-title">Home Remodeling</h3>
+                                <p class="service-desc">
+                                    Very professional, quick responses to calls,
+                                    humble and understanding. Marty has done a
+                                    lot of work for me and helped my friends and
+                                    myself work through some sticky issues.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat -->
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="img/section4-5.png" alt="home5" />
+                                </div>
+                                <h3 class="service-title">Office Renovation</h3>
+                                <p class="service-desc">
+                                    Marty has done a lot of work for me and
+                                    helped my friends and myself work through
+                                    some sticky issues. His staff is
+                                    professional and hard working! I recommend
+                                    anyone who.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Repeat -->
+                        <div class="col">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <img src="img/section4-6.png" alt="home6" />
+                                </div>
+                                <h3 class="service-title">Extra Security</h3>
+                                <p class="service-desc">
+                                    Very professional, quick responses to calls,
+                                    humble and understanding. Marty has done a
+                                    lot of work for me and helped my friends and
+                                    myself work through some sticky issues.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section:Explore featured -->
+            <section class="property-featured">
+                <div class="container">
+                    <p class="section-subtitle">Properties</p>
+                    <h2 class="section-title">
+                        Explore featured <br />
+                        latest and properties
+                    </h2>
+
+                    <div
+                        class="row row-cols-3 row-cols-md-2 row-cols-sm-1 gx-4 gy-5"
+                    >
+                        <div class="col">
+                            <div class="property-card">
+                                <div class="property-thumb">
+                                    <img src="/img/Rectangle 6079.png" alt="" />
+                                </div>
+                                <div class="property-info">
+                                    <p class="property-price">$450,00</p>
+                                    <h3 class="property-name">
+                                        Luxury villa in rego apartment
+                                    </h3>
+                                    <div class="property-meta">
+                                        <span
+                                            ><i class="fa-solid fa-bed"></i> 3
+                                            Beds</span
+                                        >
+                                        <span
+                                            ><i class="fa-solid fa-bath"></i> 2
+                                            Bath</span
+                                        >
+                                        <span
+                                            ><i
+                                                class="fa-regular fa-maximize"
+                                            ></i>
+                                            3400 Sq ft</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- repeat -->
+                        <div class="col">
+                            <div class="property-card">
+                                <div class="property-thumb">
+                                    <img src="/img/Rectangle 6080.png" alt="" />
+                                </div>
+                                <div class="property-info">
+                                    <p class="property-price">$450,00</p>
+                                    <h3 class="property-name">
+                                        Luxury villa in rego apartment
+                                    </h3>
+                                    <div class="property-meta">
+                                        <span
+                                            ><i class="fa-solid fa-bed"></i> 3
+                                            Beds</span
+                                        >
+                                        <span
+                                            ><i class="fa-solid fa-bath"></i> 2
+                                            Bath</span
+                                        >
+                                        <span
+                                            ><i
+                                                class="fa-regular fa-maximize"
+                                            ></i>
+                                            3400 Sq ft</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- repeat  -->
+                        <div class="col">
+                            <div class="property-card">
+                                <div class="property-thumb">
+                                    <img src="/img/Rectangle 6081.png" alt="" />
+                                </div>
+                                <div class="property-info">
+                                    <p class="property-price">$450,00</p>
+                                    <h3 class="property-name">
+                                        Luxury villa in rego apartment
+                                    </h3>
+                                    <div class="property-meta">
+                                        <span
+                                            ><i class="fa-solid fa-bed"></i> 3
+                                            Beds</span
+                                        >
+                                        <span
+                                            ><i class="fa-solid fa-bath"></i> 2
+                                            Bath</span
+                                        >
+                                        <span
+                                            ><i
+                                                class="fa-regular fa-maximize"
+                                            ></i>
+                                            3400 Sq ft</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pagination-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- 12K+ -->
+            <section class="stats">
+                <div class="container">
+                    <div
+                        class="row row-cols-4 row-cols-md-2 row-cols-sm-1 text-center"
+                    >
+                        <div class="col">
+                            <div class="stats-item">
+                                <h3 class="stats-number">12K+</h3>
+                                <p class="stats-label">Renovation Project</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="stats-item">
+                                <h3 class="stats-number">100+</h3>
+                                <p class="stats-label">Team Members</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="stats-item">
+                                <h3 class="stats-number">15K+</h3>
+                                <p class="stats-label">Project Completed</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="stats-item">
+                                <h3 class="stats-number">100%</h3>
+                                <p class="stats-label">Satisfied Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section:Excellent customer service and -->
+            <section class="project-gallery">
+                <div class="container">
+                    <p class="section-subtitle">Our Project</p>
+                    <h2 class="section-title">
+                        Excellent customer service <br />
+                        and exceptional
+                    </h2>
+
+                    <div
+                        class="row gx-3 gy-3 row-cols-3 row-cols-md-2 row-cols-sm-1"
+                    >
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6083.png"
+                                alt=""
+                                class="gallery-img"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6084.png"
+                                alt=""
+                                class="gallery-img tall"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6085.png"
+                                alt=""
+                                class="gallery-img"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6086.png"
+                                alt=""
+                                class="gallery-img"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6087.png"
+                                alt=""
+                                class="gallery-img small"
+                            />
+                        </div>
+                        <div class="col">
+                            <img
+                                src="/img/Rectangle 6086.png"
+                                alt="dsa"
+                                class="gallery-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section :OUR TEAM  -->
+            <section class="team-section">
+                <div class="container">
+                    <h2 class="section-title text-center">OUR TEAM Members</h2>
+
+                    <div
+                        class="row row-cols-3 row-cols-md-2 row-cols-sm-1 gx-4 gy-4"
+                    >
+                        <div class="col">
+                            <div class="team-card active">
+                                <img
+                                    src="/img/p1.png"
+                                    alt="Dianne Russell"
+                                    class="team-avatar"
+                                />
+                                <h3 class="team-name">DIANNE RUSSELL</h3>
+                                <p class="team-role">CEO</p>
+                                <div class="team-social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="team-card">
+                                <img
+                                    src="/img/p2.png"
+                                    alt="Jennie Wilson"
+                                    class="team-avatar"
+                                />
+                                <h3 class="team-name">JENNIE WILSON</h3>
+                                <p class="team-role">CEO</p>
+                                <div class="team-social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="team-card">
+                                <img
+                                    src="/img/p3.png"
+                                    alt="Bessie Cooper"
+                                    class="team-avatar"
+                                />
+                                <h3 class="team-name">BESSIE COOPER</h3>
+                                <p class="team-role">CEO</p>
+                                <div class="team-social">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 3rem">
+                        <button class="btn btn-primary">View All</button>
+                    </div>
+                </div>
+            </section>
+            <!-- section :What they're saying about -->
+            <section class="testimonials-section">
+                <div class="container">
+                    <p class="section-subtitle text-center">Testimonials</p>
+                    <h2 class="section-title text-center">
+                        What they're saying about <br />
+                        our work feedback
+                    </h2>
+                    <div
+                        class="row row-cols-3 row-cols-md-2 row-cols-sm-1 gy-4 gx-4"
+                    >
+                        <div class="col">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    Excellent value for money holiday. My
+                                    questions were all answered promptly and
+                                    when my consultant was unavailable, another
+                                    staff member would respond.
+                                </p>
+                                <div class="testimonial-user">
+                                    <img src="/img/e1.png" alt="" />
+                                    <div>
+                                        <strong>Samantha Bell</strong>
+                                        <p>Tourists</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    Easy booking no problems with using vouchers
+                                    or service. Voucher received in mail when we
+                                    got home. Bonus for next holiday. Thank you
+                                </p>
+                                <div class="testimonial-user">
+                                    <img src="/img/e2.png" alt="" />
+                                    <div>
+                                        <strong>Carmen Gloria</strong>
+                                        <p>Traveller</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="testimonial-card">
+                                <p class="testimonial-text">
+                                    Very easy to book a much needed vacation
+                                    with Travel Online. I loved coming home to a
+                                    $100 gift voucher to use for my next
+                                    booking. Just need to decide where to go!
+                                    Thank you.
+                                </p>
+                                <div class="testimonial-user">
+                                    <img src="/img/e3.png" alt="" />
+                                    <div>
+                                        <strong>Brydie Cameron</strong>
+                                        <p>Tourists</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //logo  -->
+            <section class="client-logos">
+                <div class="container">
+                    <div
+                        class="row justify-center align-center row-cols-5 row-cols-md-3 row-cols-sm-1 g-4"
+                    >
+                        <div class="col">
+                            <img src="/img/l1.png" alt="MeUndies" />
+                        </div>
+                        <div class="col">
+                            <img src="/img/l2.png" alt="Slack" />
+                        </div>
+                        <div class="col logo-center">
+                            <img src="/img/l3.png" alt="Amazon" />
+                        </div>
+                        <div class="col">
+                            <img src="/img/l4.png" alt="WooCommerce" />
+                        </div>
+                        <div class="col">
+                            <img src="/img/l5.png" alt="SitePoint" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section :Latest news feeds -->
+            <section class="news-feed">
+                <div class="container">
+                    <p class="section-subtitle">Blog Post</p>
+                    <h2 class="section-title">Latest news feeds</h2>
+
+                    <div class="row row-cols-2 row-cols-md-1 gx-4 gy-5">
+                        <div class="col">
+                            <div class="news-card">
+                                <img
+                                    src="/img/latest1.png"
+                                    alt="News Image"
+                                    class="news-img"
+                                />
+                                <h3 class="news-title">
+                                    Agency is the capacity of an actor to act in
+                                    a given
+                                </h3>
+                                <p class="news-meta">
+                                    DECEMBER 06, 2021 | ADMIN
+                                </p>
+                                <p class="news-desc">
+                                    But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a
+                                    complete account of the system and expound.
+                                </p>
+                                <a href="#" class="read-more">READ MORE</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="news-card">
+                                <img
+                                    src="/img/latest2.png"
+                                    alt="News Image"
+                                    class="news-img"
+                                />
+                                <h3 class="news-title">
+                                    Renovating a living roo? Expeats shere their
+                                    secrets
+                                </h3>
+                                <p class="news-meta">
+                                    DECEMBER 06, 2021 | ADMIN
+                                </p>
+                                <p class="news-desc">
+                                    But I must explain to you how all this
+                                    mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a
+                                    complete account of the system and expound.
+                                </p>
+                                <a href="#" class="read-more">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Frequently Asked Questions -->
+            <section class="faq-section">
+                <div class="container">
+                    <p class="section-subtitle">FAQ</p>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+
+                    <div class="row row-cols-1 gx-3 gy-3">
+                        <!-- Câu 1 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq1" hidden />
+                                <label class="faq-question" for="faq1">
+                                    Can I create ads for different platforms
+                                    using ABQ only?
+                                    <span class="faq-icon"></span>
+                                </label>
+                                <div class="faq-answer">
+                                    By easily connecting your different ad
+                                    accounts to WASK, you can publish your ads
+                                    from a single screen.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Câu 2 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq2" hidden />
+                                <label class="faq-question" for="faq2">
+                                    How does creating ads with ABQ help me in my
+                                    advertising processes?
+                                    <span class="faq-icon"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Câu 3 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq3" hidden />
+                                <label class="faq-question" for="faq3">
+                                    Is it any limit on the number of publishing
+                                    ads in ABQ?
+                                    <span class="faq-icon"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Câu 4 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq4" hidden />
+                                <label class="faq-question" for="faq4">
+                                    Can I use my own images in my designs?
+                                    <span class="faq-icon"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Câu 5 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq5" hidden />
+                                <label class="faq-question" for="faq5">
+                                    How can I cancel my subscription?
+                                    <span class="faq-icon"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Câu 6 -->
+                        <div class="col">
+                            <div class="faq-item">
+                                <input type="checkbox" id="faq6" hidden />
+                                <label class="faq-question" for="faq6">
+                                    How can I manage my inefficient ads that I
+                                    have identified with A/B testing?
+                                    <span class="faq-icon"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Subscribe our newsletter -->
+            <section class="newsletter">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <h2 class="newsletter-title">
+                                Subscribe our newsletter
+                            </h2>
+                            <p class="newsletter-desc">
+                                Reciev latest news, update, and many other
+                                things <br />
+                                every week.
+                            </p>
+
+                            <form class="newsletter-form">
+                                <input
+                                    type="email"
+                                    class="newsletter-input"
+                                    placeholder="Enter Your email address"
+                                    required
+                                />
+                                <button type="submit" class="newsletter-btn">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <%- include("./partials/footer.ejs") %>
         </div>
         <script type="module" src="./main.js"></script>
